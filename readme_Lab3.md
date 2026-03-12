@@ -124,3 +124,7 @@ WordPress использует специальные функции для по
 В ходе лабораторной работы была изучена базовая структура темы WordPress и принципы работы системы шаблонов. Была создана собственная тема BookPunk, включающая обязательные файлы (style.css, index.php) и основные шаблоны (header.php, footer.php, page.php, single.php, archive.php, front-page.php). Также были добавлены стили, скрипты и дополнительные элементы структуры темы.
 
 В процессе работы были освоены способы подключения общих частей шаблонов с помощью функций get_header(), get_footer() и get_sidebar(), а также рассмотрена роль файла functions.php для расширения функциональности темы.
+
+### Использованные источники
+
+[GitHub](https://github.com/MSU-Courses/content-management-systems/tree/main/Lab/03_Theme_Development)
