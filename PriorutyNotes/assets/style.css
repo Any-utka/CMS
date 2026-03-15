@@ -1,0 +1,101 @@
+/* ===== General Styles ===== */
+/* ===== Priority Notes ===== */
+.pn-notes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.pn-notes li {
+    background: rgba(15,25,45,0.85);
+    border: 1px solid rgba(120,150,255,0.15);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    color: #e6edf7; /* светлый текст */
+}
+
+.pn-notes li:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 10px 25px rgba(50,100,255,0.25),
+        0 0 15px rgba(120,150,255,0.2);
+}
+
+.pn-notes li strong {
+    display: block;
+    font-size: 20px;
+    color: #d7e4ff; /* заголовок заметки */
+    margin-bottom: 8px;
+}
+
+.pn-notes li small {
+    display: block;
+    font-size: 14px;
+    color: #8ea8d8; /* дата */
+    margin-top: 10px;
+}
+
+.pn-notes li p {
+    font-size: 14px;
+    color: #cfdcff;
+    margin: 10px 0 0 0;
+}
+
+/* ===== Priority Notes Form ===== */
+
+.pn-note-form{
+    max-width:600px !important;
+    background: rgba(15,25,45,0.85) !important;
+    padding:30px !important;
+    border-radius:12px !important;
+    border:1px solid rgba(120,160,255,0.2) !important;
+    box-shadow:0 0 25px rgba(120,160,255,0.1) !important;
+}
+
+.pn-note-form input,
+.pn-note-form textarea,
+.pn-note-form select{
+    width:100% !important;
+    padding:12px !important;
+    margin-bottom:20px !important;
+    border-radius:8px !important;
+    border:1px solid rgba(120,160,255,0.3) !important;
+    background: rgba(15,25,45,0.75) !important;
+    color:#e6f0ff !important;
+    font-size:16px !important;
+}
+
+.pn-note-form input:focus,
+.pn-note-form textarea:focus,
+.pn-note-form select:focus{
+    border-color:#78a0ff !important;
+    box-shadow:0 0 15px rgba(120,160,255,0.5) !important;
+    outline:none !important;
+}
+
+.pn-note-form input[type="submit"]{
+    background:linear-gradient(90deg,#4a6eff,#78a0ff) !important;
+    border:none !important;
+    border-radius:8px !important;
+    padding:12px !important;
+    color:#fff !important;
+    font-size:18px !important;
+    cursor:pointer !important;
+    transition:all 0.3s ease !important;
+}
+
+.pn-note-form input[type="submit"]:hover{
+    background:linear-gradient(90deg,#78a0ff,#a0c0ff) !important;
+    box-shadow:0 0 20px rgba(120,160,255,0.6) !important;
+}
+.pn-note-form-wrapper {
+    display: flex;
+    justify-content: flex-end; /* сдвигает форму вправо */
+    margin: 20px 0; /* отступ сверху и снизу */
+}

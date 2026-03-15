@@ -1,0 +1,346 @@
+/* ===== Основные стили ===== */
+
+body{
+margin:0;
+font-family: "Georgia", serif;
+background: linear-gradient(180deg,#0a0f1c,#0d1b2a);
+color:#e6edf7;
+line-height:1.6;
+}
+
+/* контейнер */
+
+.container{
+width:1200px;
+margin:auto;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+
+background: rgba(5,10,25,0.85);
+backdrop-filter: blur(6px);
+border-bottom:1px solid rgba(100,150,255,0.2);
+
+}
+
+.header-inner{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+
+}
+
+/* ===== LOGO ===== */
+
+.logo a{
+
+font-size:28px;
+font-weight:bold;
+color:#a7c7ff;
+letter-spacing:2px;
+
+}
+
+/* ===== MENU ===== */
+
+.menu{
+
+display:flex;
+gap:30px;
+list-style:none;
+margin:0;
+padding:0;
+
+}
+
+.menu li a{
+
+color:#cfdfff;
+font-size:16px;
+padding:6px 12px;
+border-radius:6px;
+transition:all 0.25s ease;
+
+}
+
+/* магическая подсветка */
+
+.menu li a:hover{
+
+color:#ffffff;
+background:rgba(120,160,255,0.15);
+
+box-shadow:
+0 0 10px rgba(120,160,255,0.5),
+0 0 20px rgba(120,160,255,0.2);
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+position:relative;
+height:500px;
+overflow:hidden;
+
+}
+
+.hero img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(0.35);
+
+}
+
+.hero-text{
+
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+
+}
+
+.hero-text h2{
+
+font-size:48px;
+color:#e0ecff;
+text-shadow:
+0 0 10px rgba(120,160,255,0.7),
+0 0 25px rgba(120,160,255,0.4);
+
+}
+
+.hero-text p{
+
+font-size:20px;
+color:#b8ccff;
+
+}
+
+/* ===== КНИГИ ===== */
+
+.book-card{
+
+width:280px;
+display:inline-block;
+vertical-align:top;
+
+background:rgba(15,25,45,0.8);
+
+margin:20px;
+padding:20px;
+
+border-radius:10px;
+
+border:1px solid rgba(120,150,255,0.15);
+
+transition:all 0.3s ease;
+
+}
+
+/* подсветка карточки */
+
+.book-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 10px 25px rgba(50,100,255,0.25),
+0 0 15px rgba(120,150,255,0.2);
+
+}
+
+.book-card img{
+
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+
+}
+
+/* заголовок книги */
+
+.book-card h3{
+
+color:#d7e4ff;
+font-size:20px;
+margin-bottom:8px;
+
+}
+
+/* автор */
+
+.book-author{
+
+font-size:14px;
+color:#8ea8d8;
+margin-bottom:10px;
+
+}
+
+/* описание */
+
+.book-card p{
+
+font-size:14px;
+color:#cfdcff;
+
+}
+
+/* ===== TEXT ===== */
+
+article{
+
+max-width:800px;
+margin:auto;
+
+}
+
+article h1{
+
+font-size:36px;
+color:#dbe8ff;
+
+}
+
+article p{
+
+color:#d0dcf5;
+font-size:17px;
+
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer{
+
+margin-top:60px;
+
+background:#060b16;
+
+border-top:1px solid rgba(120,150,255,0.15);
+
+padding:30px;
+
+text-align:center;
+
+color:#8da3cc;
+
+}
+/* ===== HERO ===== */
+
+.hero{
+position:relative;
+height:550px;
+overflow:hidden;
+background: linear-gradient(180deg,#0a0f1c,#0d1b2a);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+transition:transform 0.2s ease-out;
+z-index:0;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: linear-gradient(180deg, rgba(5,10,25,0.2), rgba(5,10,25,0.8));
+z-index:1;
+}
+
+/* ОБЕРТКА ТЕКСТА */
+.hero-text-wrapper{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  height:100%;
+}
+
+.hero-text h2{
+  font-size:52px;
+  color:#e6f0ff;
+  text-shadow:0 0 10px rgba(120,160,255,0.7), 0 0 30px rgba(120,160,255,0.4);
+  margin:0;
+}
+
+.hero-text p{
+  font-size:20px;
+  color:#b8ccff;
+  margin-top:10px;
+}
+/* ===== Обёртка формы ===== */
+.bookpunk-form{
+  max-width:600px;
+  margin:auto;
+  background: rgba(15,25,45,0.85);
+  padding:30px;
+  border-radius:12px;
+  border:1px solid rgba(120,160,255,0.2);
+  box-shadow: 0 0 25px rgba(120,160,255,0.1);
+}
+
+/* ===== Поля input и textarea ===== */
+.bookpunk-form input[type="text"],
+.bookpunk-form input[type="email"],
+.bookpunk-form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid rgba(120,160,255,0.3);
+  background: rgba(15,25,45,0.75);
+  color:#e6f0ff;
+  font-size:16px;
+  transition: all 0.3s ease;
+}
+
+.bookpunk-form input[type="text"]:focus,
+.bookpunk-form input[type="email"]:focus,
+.bookpunk-form textarea:focus{
+  border-color:#78a0ff;
+  box-shadow:0 0 15px rgba(120,160,255,0.5);
+  outline:none;
+}
+
+/* ===== Кнопка отправки ===== */
+.bookpunk-form input[type="submit"]{
+  background: linear-gradient(90deg,#4a6eff,#78a0ff);
+  border:none;
+  border-radius:8px;
+  padding:12px 25px;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+
+.bookpunk-form input[type="submit"]:hover{
+  background: linear-gradient(90deg,#78a0ff,#a0c0ff);
+  box-shadow:0 0 20px rgba(120,160,255,0.6);
+}

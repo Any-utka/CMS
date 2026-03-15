@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#0f0f14;
+    color:#eee;
+}
+
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+a{
+    color:#c8a96a;
+    text-decoration:none;
+}
