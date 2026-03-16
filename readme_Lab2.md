@@ -14,6 +14,7 @@
 2. Запускаем модули Apache и MySQL
    ![Img-1](https://imgur.com/mclHL2S.png)
 3. В phpMyAdmin создаем новую базу данных ```suysea```
+
    ![Img-2](https://imgur.com/Taw45vj.png)
 
 #### Шаг 2. Установка WordPress
